@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap');
+
+body {
+    font-family: $font-main;
+    background-color: $dark-color;
+    color: $white-color;
+    font-size: 16px;
+}
+
+a {
+    color: $white-color;
+    transition: 250ms ease-in;
+
+    &:hover {
+        color: $accent-color;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1140px;
+}
