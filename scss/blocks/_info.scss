@@ -1,0 +1,14 @@
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    &__item {
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+
+    &__icon {
+        margin-right: 14px;
+    }
+}
