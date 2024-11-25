@@ -11,7 +11,7 @@
 			rgba(45, 52, 60, 0.38) 51.04%,
 			#242b33 92.19%
 		),
-		url('./../../img/header/hero-bg.jpg');
+		url('./../img/header/hero-bg.jpg');
 
     // @include mediaTablet {
     //     min-height: unset;
@@ -95,7 +95,7 @@
     max-width: 560px;
     margin-left: auto;
     margin-right: auto;
-
+    text-wrap: balance;
     text-align: center;
     font-size: 48px;
     font-family: $font-accent;

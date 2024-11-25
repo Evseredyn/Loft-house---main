@@ -47,7 +47,7 @@
         bottom: 15px;
 
         border: 3px double rgb(212, 193, 127, 0.4);
-        transition: 250ms ease-in;
+        transition: opacity 250ms ease-in;
     }
     &:hover::after {
         opacity: 1;
