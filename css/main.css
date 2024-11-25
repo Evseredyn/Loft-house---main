@@ -105,7 +105,11 @@ a:hover {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1140px;
+  max-width: 1140px;
+}
+
+.visualy-hidden {
+  display: none;
 }
 
 .header {
@@ -168,4 +172,96 @@ a:hover {
 }
 .info__icon {
   margin-right: 14px;
+}
+
+.benefits__row {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
+
+.benefits__item {
+  text-align: center;
+  max-width: 200px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.benefits__item:last-child {
+  max-width: 130px;
+}
+
+.benefits__item-img {
+  margin-bottom: 53px;
+}
+
+.benefits__item-text {
+  font-size: 20px;
+  line-height: 1.35;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.appartments__title {
+  font-size: 36px;
+  font-family: "Playfair Display", serif;
+  color: #D4C17F;
+  font-weight: 700;
+  margin-bottom: 88px;
+}
+
+.appartments__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.appartments__card {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.appartments__card::before {
+  content: "";
+  z-index: 6;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242b33 100%);
+}
+.appartments__card::after {
+  content: "";
+  opacity: 0;
+  z-index: 7;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 3px double rgba(212, 193, 127, 0.4);
+  transition: 250ms ease-in;
+}
+.appartments__card:hover::after {
+  opacity: 1;
+}
+
+.appartments__card-img {
+  z-index: 5;
+  transition: transform 250ms ease-in;
+}
+
+.appartments__card:hover .appartments__card-img {
+  transform: scale(1.1);
+  filter: contrast(1.1) brightness(1.2) saturate(1.2);
+}
+
+.appartments__card-title {
+  z-index: 9;
+  position: absolute;
+  left: 50px;
+  right: 20px;
+  bottom: 44px;
+  font-size: 24px;
 }/*# sourceMappingURL=main.css.map */
