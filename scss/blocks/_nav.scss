@@ -3,11 +3,16 @@
     letter-spacing: 0.05em;
 }
 
+// .nav__list {
+//     display: flex;
+//     gap: 40px;
+
+//     @include mediaTablet {
+//         display: none;
+//     }
+// }
+
 .nav__list {
     display: flex;
-    gap: 40px;
-
-    @include mediaTablet {
-        display: none;
-    }
+    column-gap: 40px;
 }

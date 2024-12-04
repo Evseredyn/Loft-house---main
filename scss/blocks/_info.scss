@@ -1,29 +1,68 @@
+// .info {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     gap: 30px;
+
+//         @include mediaTablet {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         row-gap: 30px;
+//     }
+
+//     &__item {
+//         padding-left: 34px;
+//         padding-right: 34px;
+//     }
+
+//     &__link {
+//         font-style: 18px;
+
+//         @include mediaTablet {
+//             font-size: 14px;
+//         }
+//     }
+
+//     &__icon {
+//         margin-right: 14px;
+//     }
+// }
+
 .info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    position: relative;
+    font-size: 18px;
 
-        @include mediaTablet {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        row-gap: 30px;
-    }
+    &--map, &--tel {
+        padding-left: 35px;
 
-    &__item {
-        padding-left: 34px;
-        padding-right: 34px;
-    }
+        &::before {
+            content: "";
 
-    &__link {
-        font-style: 18px;
+            position: absolute;
+            left: 0px;
+            top: 50%;
+            width: 21px;
+            height: 21px;
+            transform: translate(0%, -50%);
 
-        @include mediaTablet {
-            font-size: 14px;
+            background-repeat: no-repeat;
+            background-position: center;
         }
     }
 
-    &__icon {
-        margin-right: 14px;
+    &--map::before {
+        background-image: url('./../img/header/map.svg');
+    }
+
+    &--tel::before {
+        background-image: url('./../img/header/phone.svg');
+    }
+
+    @include mediaTablet {
+        font-size: 14px;
+
+        &--map, &--tel {
+            padding-left: 26px;
+        }
     }
 }
