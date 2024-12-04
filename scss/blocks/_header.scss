@@ -222,6 +222,7 @@
 
 .header__footer {
     display: grid;
+    justify-items: end;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
 

@@ -3,7 +3,7 @@
 //     grid-template-columns: 1fr 1fr;
 //     gap: 30px;
 
-//         @include mediaTablet {
+//     @include mediaTablet {
 //         display: flex;
 //         flex-direction: column;
 //         align-items: center;
@@ -52,6 +52,14 @@
 
     &--map::before {
         background-image: url('./../img/header/map.svg');
+    }
+
+    &--tel {
+        margin-right: auto;
+        
+    @include mediaTablet {
+        margin-right: unset;
+    }
     }
 
     &--tel::before {
