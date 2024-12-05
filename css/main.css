@@ -529,6 +529,11 @@ a:hover {
   padding: 180px 0;
   background: linear-gradient(180deg, #242b33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url("./../img/cta/cta-bg.jpg"), #c4c4c4;
 }
+@media screen and (max-width: 959px) {
+  .cta {
+    padding: 60px 0;
+  }
+}
 
 .cta__title {
   font-size: 36px;
@@ -537,11 +542,21 @@ a:hover {
   font-weight: 700;
   margin-bottom: 17px;
 }
+@media screen and (max-width: 959px) {
+  .cta__title {
+    font-size: 28px;
+  }
+}
 
 .cta__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+}
+@media screen and (max-width: 959px) {
+  .cta__wrapper {
+    grid-template-columns: 1fr;
+  }
 }
 
 .cta__text {
@@ -550,17 +565,33 @@ a:hover {
 .cta__text p + p {
   margin-top: 1em;
 }
-
-.cta__form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 35px 30px;
+@media screen and (max-width: 959px) {
+  .cta__text {
+    font-size: 14px;
+  }
 }
 
 .cta__form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 35px 30px;
+}
+@media screen and (max-width: 959px) {
+  .cta__form {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cta__form {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px 30px;
+}
+@media screen and (max-width: 959px) {
+  .cta__form {
+    grid-template-columns: 1fr;
+  }
 }
 
 .form__input {
@@ -587,6 +618,11 @@ a:hover {
   line-height: 1.23;
   color: #E7E7E7;
   text-align: center;
+}
+@media screen and (max-width: 959px) {
+  .form__privacy--bottom {
+    grid-row: 4/5;
+  }
 }
 
 .form__btn {
@@ -644,6 +680,12 @@ a:hover {
   top: 50%;
   transform: translate(-50%, -50%);
   transition: all 0.2s ease-in;
+}
+@media screen and (max-width: 959px) {
+  .video__icon {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .video__link:hover .video__icon {

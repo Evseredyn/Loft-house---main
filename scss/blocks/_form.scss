@@ -1,7 +1,12 @@
 .cta__form {
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr 1fr;
     gap: 35px 30px;
+
+    @include mediaTablet {
+        grid-template-columns: 1fr;
+    }
 }
 
 .form__input {
@@ -27,6 +32,12 @@
     line-height: 1.23;
     color: $muted;
     text-align: center;
+
+    &--bottom {
+            @include mediaTablet {
+            grid-row: 4 / 5;
+        }
+    }
 }
 .form__btn {
     height: 50px;
