@@ -1,9 +1,9 @@
 .feedback {
 	padding-bottom: 180px;
 
-	// @include mediaTablet {
-	// 	padding-bottom: 90px;
-	// }
+	@include mediaTablet {
+		padding-bottom: 90px;
+	}
 }
 
 .feedback__title {
@@ -13,9 +13,10 @@
     font-weight: 700;
 	margin-bottom: 38px;
 
-	// @include mediaTablet {
-	// 	margin-bottom: 19px;
-	// }
+	@include mediaTablet {
+		font-size: 28px;
+		margin-bottom: 19px;
+	}
 }
 
 .feedback__form {
@@ -24,7 +25,8 @@
 	gap: 30px;
 	align-items: center;
 
-    // @include mediaTablet {
-	//     grid-template-columns: 1fr;
-	// }
+    @include mediaTablet {
+		
+	    grid-template-columns: 1fr;
+	}
 }

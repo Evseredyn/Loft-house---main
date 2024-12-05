@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Reset and base styles  */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap");
 * {
@@ -712,6 +713,11 @@ a:hover {
   line-height: 1.2;
   font-weight: 700;
 }
+@media screen and (max-width: 959px) {
+  .section-map {
+    padding: 90px 0;
+  }
+}
 
 .section-map__title {
   font-size: 36px;
@@ -719,6 +725,12 @@ a:hover {
   color: #D4C17F;
   font-weight: 700;
   margin-bottom: 88px;
+}
+@media screen and (max-width: 959px) {
+  .section-map__title {
+    font-size: 28px;
+    margin-bottom: 44px;
+  }
 }
 
 .map {
@@ -730,6 +742,11 @@ a:hover {
 .feedback {
   padding-bottom: 180px;
 }
+@media screen and (max-width: 959px) {
+  .feedback {
+    padding-bottom: 90px;
+  }
+}
 
 .feedback__title {
   font-size: 36px;
@@ -738,12 +755,23 @@ a:hover {
   font-weight: 700;
   margin-bottom: 38px;
 }
+@media screen and (max-width: 959px) {
+  .feedback__title {
+    font-size: 28px;
+    margin-bottom: 19px;
+  }
+}
 
 .feedback__form {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   align-items: center;
+}
+@media screen and (max-width: 959px) {
+  .feedback__form {
+    grid-template-columns: 1fr;
+  }
 }
 
 .footer {
@@ -753,11 +781,23 @@ a:hover {
   font-size: 14px;
   letter-spacing: 0.05em;
 }
+@media screen and (max-width: 959px) {
+  .footer {
+    padding-top: 36px;
+    padding-bottom: 25px;
+  }
+}
 
 .footer__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+}
+@media screen and (max-width: 959px) {
+  .footer__grid {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 40px 30px;
+  }
 }
 
 .footer__logo {
@@ -779,4 +819,48 @@ a:hover {
   align-items: center;
   -moz-column-gap: 22px;
        column-gap: 22px;
+}
+
+[class*=copyrights-pane] {
+  /* display: none !important; */
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+
+.map:hover [class*=copyrights-pane] {
+  opacity: 1;
+}
+
+/* Создать свою карту */
+[class*=gototech] {
+  display: none !important;
+}
+
+[class*=ground-pane] {
+  filter: grayscale(1) sepia(10%);
+}
+
+/* Baloon */
+[class*=balloon__layout], [class*=balloon__content] {
+  background-color: #242b33 !important;
+  color: #fff !important;
+}
+
+[class*=balloon__tail]::after {
+  background-color: #242b33 !important;
+}
+
+[class*=balloon_layout_panel] {
+  background-color: #242b33 !important;
+}
+
+[class*=balloon__layout], [class*=balloon__content] a {
+  color: #D4C17F !important;
+}
+
+[class*=balloon__close-button] {
+  background: url("./../img/map/cross.svg") 50% no-repeat !important;
+  width: 15px !important;
+  height: 15px !important;
+  margin: 10px 7px;
 }/*# sourceMappingURL=main.css.map */

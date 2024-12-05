@@ -13,9 +13,9 @@
 		@include decorNumber;
 	}
 
-	// @include mediaTablet {
-	// 	padding: 90px 0;
-	// }
+	@include mediaTablet {
+		padding: 90px 0;
+	}
 }
 
 .section-map__title {
@@ -25,9 +25,10 @@
     font-weight: 700;
 	margin-bottom: 88px;
 
-	// @include mediaTablet {
-	// 	margin-bottom: 44px;
-	// }
+	@include mediaTablet {
+		font-size: 28px;
+		margin-bottom: 44px;
+	}
 }
 
 .section-map__map {
